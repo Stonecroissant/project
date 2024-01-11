@@ -50,6 +50,7 @@ section{
     padding-left: 30px;
     background-size: contain;
     background-repeat: no-repeat;
+    z-index: 2;
 }
 
 .main-title{
@@ -75,9 +76,51 @@ section{
     align-items: center;  
     margin-top: 20px;
     box-shadow: 5px 5px 0 #000000;
+    transition-duration: 0.3s;
 }
 
 .button a{
     font-size: 20px;
     text-decoration: none;
+}
+
+#button:hover{
+    background-color: aqua;
+}
+
+.planet{
+    background: url(img/planet.png);
+    background-repeat: no-repeat;
+    width: 405px;
+    height: 330px;
+    transform: rotate(-176deg);
+    position: absolute;
+    right: 20px;
+    z-index: 1; 
+}
+
+.planet2{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    z-index: 1;
+    left: 30px;
+    bottom: 30px;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+    animation-direction: alternate;
+    animation-name: planet2;
+}
+
+@keyframes planet2{
+    from{bottom: 30px;}
+    to{bottom: 0px;}
+}
+
+.title{
+    padding-top: 100px;
+    text-align: center;
+    color: #fff;
+    font-size: 80px;
+    text-shadow: 5px 5px 0 black;
 }
