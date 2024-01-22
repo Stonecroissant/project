@@ -109,10 +109,10 @@ section{
     animation-iteration-count: infinite;
     animation-duration: 2s;
     animation-direction: alternate;
-    animation-name: planet2;
+    animation-name: planet1;
 }
 
-@keyframes planet2{
+@keyframes planet1{
     from{bottom: 30px;}
     to{bottom: 0px;}
 }
@@ -123,4 +123,112 @@ section{
     color: #fff;
     font-size: 80px;
     text-shadow: 5px 5px 0 black;
+}
+
+.about-content{
+    height: 270px;
+    width: 35%;
+    padding-left: 40px;
+    padding-top: 40px;
+    background-color: #792aff;
+    position: relative;
+    border-radius: 20px;
+    display: flex;
+}
+
+.about-title{
+    color: #fff;
+    font-size: 20px;
+    max-width: 463px;
+    margin-bottom: 20px;
+    font-family: 'Comfortaa', sans-serif;
+}
+
+.about-card{
+    background-image: url(img/form2.png);
+    height: 346px;
+    width: 376px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 20px;
+    position: relative;
+    background-repeat: no-repeat;
+}
+
+.about-card p{
+    color: #000;
+    font-size: 17px;
+    padding-left: 20px;
+    line-height: 25px;
+    font-family: 'Comfortaa', sans-serif;
+    align-self: start;
+}
+
+
+.about-card img{
+   padding-bottom: 20px; 
+}
+
+@keyframes cloud{
+    from{transform: translateY(0px);}
+    to {transform: translateY(70px);}
+}
+.moving-cloud{
+    background: url(img/cloud.png);
+    background-repeat: no-repeat;
+    width: 180px;
+    height: 162px;
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    animation-name: cloud;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+    animation-direction: alternate;
+}
+
+.skills-card{
+    background-image: url(img/form3.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: auto;
+    height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 20px;
+    padding-left: 10px;
+}
+
+.skills-card p{
+    color: #000;
+    font-size: 18px;
+    margin-top: 80px;
+    margin-bottom: 30px;
+    text-align: center;
+    width: 500px;
+    font-family: 'Comfortaa';
+}
+
+@keyframes planet2{
+    from{transform: translateY(0px);}
+    to {transform: translateY(70px);}
+}
+
+.moving-planet2{
+    background-image: url(img/moving-planet2.png);
+    background-repeat: no-repeat;
+    background-size: no-repeat;
+    width: 208px;
+    height: 200;
+    position: absolute;
+    bottom: 70px;
+    left: 0;
+    animation-name: planet2;
+    animation-duration: 2s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
 }
