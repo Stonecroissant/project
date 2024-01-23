@@ -193,13 +193,12 @@ section{
     background-image: url(img/form3.png);
     background-repeat: no-repeat;
     background-size: contain;
-    width: auto;
     height: 450px;
     display: flex;
     align-items: center;
-    justify-content: center;
     flex-direction: column;
     margin: 20px;
+    margin-top: 100px;
     padding-left: 10px;
 }
 
@@ -231,4 +230,60 @@ section{
     animation-duration: 2s;
     animation-direction: alternate;
     animation-iteration-count: infinite;
+}
+
+.works-block img{
+    margin: 0 20px;
+   
+    box-shadow: 7px 7px #000000;
+}
+
+.comments-block{
+    max-width: 1150px;
+    justify-content: space-evenly;
+    margin: auto;
+}
+
+.comment-card{
+    background-image: url(img/card.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 200px;
+}
+
+.comment-card h3{
+    font-family: 'Comfortaa';
+    font-size: 18px;
+    padding: 10px;
+}
+
+.comment-card p{
+    font-family: 'Comfortaa';
+    font-size: 14px;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.comment{
+    background: url(img/comment.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 327px;
+    height: 161px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.comment p{
+    font-family: 'Comfortaa';
+    font-size: 20px;
+    max-width: 250px;
 }
