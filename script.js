@@ -1,3 +1,9 @@
+document.querySelector(".mobile-button").addEventListener("click",
+function(event)
+{
+    document.querySelector(".mobile-menu").classList.toggle("hide")
+})
+
 let nav = document.querySelector('.fixed-menu');
 
 nav.AddEventListener('click', function event(){
@@ -5,8 +11,21 @@ nav.AddEventListener('click', function event(){
     let activebtn = document.querySelector('.active');
 
     if (clickTarget.ClassList.contains('nav-link')){
-        clickTarget.ClassList,add('active');
+        clickTarget.ClassList.add('active');
         activebtn.classList.remove('active');
+        let mobile = document.querySelector('.active')
+        if (!mobile.classList.contains('hide')){
+            mobile.classList.add('hide')
+        }
+    }
+    let body = document.querySelector("body")
+    let mobileMenu = document.querySelector(".mobile-menu")
+    if (!body.classList.contains("off-scroll") &&
+                !mobileMenu.classList.contains('hide')) {
+        body.classList.add("off-scroll")
+    }
+    else{
+      body.classList.remove("off-scroll")  
     }
 
 })
@@ -37,3 +56,7 @@ if (!newactivebtn.classList.contains('active')) {
     newactivebtn.classList.add('active')
     newactivebtn,classList.remove('active')
 }
+
+
+
+
