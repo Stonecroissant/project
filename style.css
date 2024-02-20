@@ -364,7 +364,9 @@ nav{
     display: none;
 }
 
-
+.btn-hide {
+    display: none;
+}
 
 @media (max-width: 1000px) {
     .nav-links {

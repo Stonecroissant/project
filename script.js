@@ -2,6 +2,9 @@ document.querySelector(".mobile-button").addEventListener("click",
 function(event)
 {
     document.querySelector(".mobile-menu").classList.toggle("hide")
+    document.querySelectorAll(".mobile-btn").forEach(function(item){
+        item.classList.toggle('btn-hide')
+    })
 })
 
 let nav = document.querySelector('.fixed-menu');
@@ -13,7 +16,7 @@ nav.AddEventListener('click', function event(){
     if (clickTarget.ClassList.contains('nav-link')){
         clickTarget.ClassList.add('active');
         activebtn.classList.remove('active');
-        let mobile = document.querySelector('.active')
+        let mobile = document.querySelector('.mobile-menu')
         if (!mobile.classList.contains('hide')){
             mobile.classList.add('hide')
         }
