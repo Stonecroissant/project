@@ -9,12 +9,12 @@ function(event)
 
 let nav = document.querySelector('.fixed-menu');
 
-nav.AddEventListener('click', function event(){
+nav.AddEventListener('click', function (event){
     let clickTarget = event.target;
     let activebtn = document.querySelector('.active');
 
-    if (clickTarget.ClassList.contains('nav-link')){
-        clickTarget.ClassList.add('active');
+    if (clickTarget.classList.contains('nav-link')){
+        clickTarget.classList.add('active');
         activebtn.classList.remove('active');
         let mobile = document.querySelector('.mobile-menu')
         if (!mobile.classList.contains('hide')){
@@ -51,14 +51,16 @@ window,onscroll = function() {
     else if (window.scrollY >= h*4) {
         classlink = '.main-link'
     }
-}
+
 let activebtn = document.querySelector('.active')
 let newactivebtn = document.querySelector(classlink)
 
 if (!newactivebtn.classList.contains('active')) {
     newactivebtn.classList.add('active')
     newactivebtn,classList.remove('active')
-}
+}}
+
+
 
 
 
